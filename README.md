@@ -92,19 +92,19 @@ Here are some screenshots of the app in action:
 
 1. **Contact List**
 
-   <img src="C:\Users\30229\AppData\Roaming\Typora\typora-user-images\image-20241014152712056.png" alt="image-20241014152712056" style="zoom:50%;" />
+   <img src=".\img\联系人页面.png" alt="image-20241014152712056" style="zoom:50%;" />
 
    
 
 2. **Add Contact**
 
-   <img src="C:\Users\30229\AppData\Roaming\Typora\typora-user-images\image-20241014152842324.png" alt="image-20241014152842324" style="zoom:50%;" />
+   <img src=".\img\添加页面.png" alt="image-20241014152842324" style="zoom:50%;" />
 
    
 
 3. **Modify Contact**
 
-   <img src="C:\Users\30229\AppData\Roaming\Typora\typora-user-images\image-20241014152859772.png" alt="image-20241014152859772" style="zoom:50%;" />
+   <img src=".\img\修改页面.png" alt="image-20241014152859772" style="zoom:50%;" />
 
    
 
