@@ -1,0 +1,53 @@
+<!--pages/contactList/contactList.wxml-->
+<!--用于定义页面布局和结构-->
+<view class="container">
+
+  <button class="add-button" bindtap="showModal">添加联系人</button>
+
+  <block wx:for="{{contacts}}" wx:key="id">
+    <view class='contact-item' bindtap="goToContactDetail" data-id="{{item.id}}">
+      <view class='contact-info'>
+        <text class='contact-name'>{{item.name}}</text>
+        <text class='contact-phone'>{{item.phone}}</text>
+      </view>
+      <button class='modify-button' style ="width: 20%" bindtap="showModifyModal" data-id="{{item.id}}" data-name="{{item.name}}" data-phone="{{item.phone}}" >修改</button>
+      <button class='delete-button' style="width: 20%;" bindtap="deleteContact" data-id="{{item.id}}" >删除</button>
+    </view>
+  </block>
+<!--修改联系人-->
+<view class="modal-background" wx:if="{{showModifyModal}}">
+    <view class="modal-content">
+      <view class="modal-header">
+        <text>信息修改</text>
+      </view>
+      <view class="modal-body">
+        <input name="name" placeholder="{{newContact.name}}" bindinput="handleNameInput" />
+        <input name="phone" placeholder="{{newContact.phone}}" bindinput="handlePhoneInput" />
+      </view>
+      <view class="modal-footer">
+        <button bindtap="modifyContact">确认修改</button>
+        <button bindtap="hideModifyModal">取消</button>
+      </view>
+    </view>
+  </view>
+
+
+
+<!--添加联系人-->
+  <view class="modal-background" wx:if="{{showModal}}">
+    <view class="modal-content">
+      <view class="modal-header">
+        <text>添加联系人（小窗标题）</text>
+      </view>
+      <view class="modal-body">
+        <input name="name" placeholder="联系人姓名" bindinput="handleNameInput" />
+        <input name="phone" placeholder="联系人电话" bindinput="handlePhoneInput" />
+      </view>
+      <view class="modal-footer">
+        <button bindtap="addContact">确认添加</button>
+        <button bindtap="hideModal">取消</button>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "联系人列表",
+  "navigationBarBackgroundColor": "#FFDAB9",
+  "navigationBarTextStyle":"black",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#BBFFFF" 
+}
