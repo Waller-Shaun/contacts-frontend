@@ -30,7 +30,7 @@ Page({
   deleteContact(e){
     const contactID = e.currentTarget.dataset.id;//获取点击的联系人id
     wx.request({
-      url: `http://localhost:3000/contacts/${contactID}`,
+      url: `http://8.152.208.55:3000/contacts/${contactID}`,
       method:'DELETE',
       success:()=>{
         // 更新页面，删除本地的联系人条目
@@ -63,7 +63,7 @@ Page({
       return;
     }
     wx.request({
-      url: `http://localhost:3000/contacts/${newContact.id}`,
+      url: `http://8.152.208.55:3000/contacts/${newContact.id}`,
       method:'PUT',
       data:newContact,
       success:(res)=>{
@@ -153,7 +153,7 @@ Page({
       return;
     }
     wx.request({
-      url: 'http://localhost:3000/contacts',
+      url: 'http://8.152.208.55:3000/contacts',
       method:'POST',
       data:newContact,
       success:(res)=>{
@@ -182,7 +182,7 @@ Page({
   //获取联系人
   getContacts() {
     wx.request({
-      url: 'http://localhost:3000/contacts', 
+      url: 'http://8.152.208.55:3000/contacts', 
       method: 'GET',
       success: (res) => {
         this.setData({

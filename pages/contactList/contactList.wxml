@@ -37,7 +37,7 @@
   <view class="modal-background" wx:if="{{showModal}}">
     <view class="modal-content">
       <view class="modal-header">
-        <text>添加联系人（小窗标题）</text>
+        <text>添加联系人</text>
       </view>
       <view class="modal-body">
         <input name="name" placeholder="联系人姓名" bindinput="handleNameInput" />
